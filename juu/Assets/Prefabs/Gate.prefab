@@ -34,10 +34,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4495776509562072}
+  - component: {fileID: 135689072564055364}
+  - component: {fileID: 114210756663163344}
   m_Layer: 0
   m_Name: Warp
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -128,7 +130,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1154835930444334}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.0428, y: -13.9, z: 10.17295}
+  m_LocalPosition: {x: 24.0428, y: -12.58, z: 10.17295}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4713476985999330}
@@ -325,4 +327,27 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114210756663163344
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1154835930444334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea9123012168f409fa8b1f2c0ebbf6cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &135689072564055364
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1154835930444334}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5
   m_Center: {x: 0, y: 0, z: 0}
