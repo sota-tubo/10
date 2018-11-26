@@ -218,6 +218,16 @@ Prefab:
       propertyPath: m_Name
       value: Gate4
       objectReference: {fileID: 0}
+    - target: {fileID: 114210756663163344, guid: 41c277fb8611641f2a71385a16ac500f,
+        type: 2}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 1298129161}
+    - target: {fileID: 114210756663163344, guid: 41c277fb8611641f2a71385a16ac500f,
+        type: 2}
+      propertyPath: score
+      value: 
+      objectReference: {fileID: 1152107272}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41c277fb8611641f2a71385a16ac500f, type: 2}
   m_IsPrefabAsset: 0
@@ -264,6 +274,16 @@ Prefab:
       propertyPath: m_Name
       value: Gate5
       objectReference: {fileID: 0}
+    - target: {fileID: 114210756663163344, guid: 41c277fb8611641f2a71385a16ac500f,
+        type: 2}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 1298129161}
+    - target: {fileID: 114210756663163344, guid: 41c277fb8611641f2a71385a16ac500f,
+        type: 2}
+      propertyPath: score
+      value: 
+      objectReference: {fileID: 1152107272}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41c277fb8611641f2a71385a16ac500f, type: 2}
   m_IsPrefabAsset: 0
@@ -275,6 +295,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 446381609}
+  - component: {fileID: 446381610}
   m_Layer: 0
   m_Name: GameSystem
   m_TagString: Untagged
@@ -295,6 +316,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &446381610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 446381608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 266c9a7f7cc144a15a95a84b2366778d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &560908606
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,6 +453,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114210756663163344, guid: 41c277fb8611641f2a71385a16ac500f,
+        type: 2}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 1298129161}
+    - target: {fileID: 114210756663163344, guid: 41c277fb8611641f2a71385a16ac500f,
+        type: 2}
+      propertyPath: score
+      value: 
+      objectReference: {fileID: 1152107272}
     - target: {fileID: 1078990036858160, guid: 41c277fb8611641f2a71385a16ac500f, type: 2}
       propertyPath: m_Name
       value: Gate1
@@ -439,7 +481,7 @@ GameObject:
   m_Layer: 0
   m_Name: WarpStart
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -450,7 +492,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 877631940}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.9, z: -36}
+  m_LocalPosition: {x: 0.254, y: 0.95, z: -36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -593,6 +635,16 @@ Prefab:
       propertyPath: m_Name
       value: Gate3
       objectReference: {fileID: 0}
+    - target: {fileID: 114210756663163344, guid: 41c277fb8611641f2a71385a16ac500f,
+        type: 2}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 1298129161}
+    - target: {fileID: 114210756663163344, guid: 41c277fb8611641f2a71385a16ac500f,
+        type: 2}
+      propertyPath: score
+      value: 
+      objectReference: {fileID: 1152107272}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41c277fb8611641f2a71385a16ac500f, type: 2}
   m_IsPrefabAsset: 0
@@ -623,8 +675,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 019b73153aee94696bc9ad33838e2978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: {fileID: 0}
-  warpPoint: {fileID: 0}
 --- !u!4 &1152107273
 Transform:
   m_ObjectHideFlags: 0
@@ -990,6 +1040,16 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114210756663163344, guid: 41c277fb8611641f2a71385a16ac500f,
+        type: 2}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 1298129161}
+    - target: {fileID: 114210756663163344, guid: 41c277fb8611641f2a71385a16ac500f,
+        type: 2}
+      propertyPath: score
+      value: 
+      objectReference: {fileID: 1152107272}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41c277fb8611641f2a71385a16ac500f, type: 2}
   m_IsPrefabAsset: 0
@@ -1102,6 +1162,16 @@ Prefab:
       propertyPath: m_Name
       value: Gate2
       objectReference: {fileID: 0}
+    - target: {fileID: 114210756663163344, guid: 41c277fb8611641f2a71385a16ac500f,
+        type: 2}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 1298129161}
+    - target: {fileID: 114210756663163344, guid: 41c277fb8611641f2a71385a16ac500f,
+        type: 2}
+      propertyPath: score
+      value: 
+      objectReference: {fileID: 1152107272}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41c277fb8611641f2a71385a16ac500f, type: 2}
   m_IsPrefabAsset: 0

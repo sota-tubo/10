@@ -369,6 +369,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea9123012168f409fa8b1f2c0ebbf6cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: {fileID: 0}
+  score: {fileID: 0}
 --- !u!135 &135689072564055364
 SphereCollider:
   m_ObjectHideFlags: 1

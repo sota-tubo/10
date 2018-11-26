@@ -5,16 +5,10 @@ using UnityEngine;
 public class Score : MonoBehaviour {
 
 	public static int score;
-	private float timeScore;
-	[SerializeField]
-	private Timer timer;
-	[SerializeField]
-	private WarpPoint warpPoint;
 
 	// Use this for initialization
 	void Start () {
 		score = 0;
-		timeScore = -1;
 	}
 	
 	// Update is called once per frame
@@ -24,17 +18,32 @@ public class Score : MonoBehaviour {
 
 	private void FixedUpdate()
 	{
-		if (warpPoint.scoreplus == true)
-		{
-			warpPoint.scoreplus = false;
-			timeScore = timer.timesec;
-			plus(timeScore);
-		}
+		
 	}
 
-    void plus(float time)
+	public void plus(float time)
 	{
 		//スコアの配分
+		if (time >= 8f)
+		{
+			score += 10;
+		}
+		else if ( time < 8f && time >= 7f)
+		{
+			score += 8;
+		}
+		else if ( time < 7f && time >= 6f)
+		{
+			score += 5;
+		}
+		else if (time < 6f && time >= 5f)
+		{
+			score += 3;
+		}
+		else if (time < 5f && time >= 4f)
+		{
+			score += 1;
+		}
 	}
 
 }

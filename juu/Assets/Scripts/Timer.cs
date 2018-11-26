@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour {
 
 	private Text timeText;
-	public float timesec { get; private set; }
+	public float timesec { get; set; }
 
 	// Use this for initialization
 	void Start () {
@@ -17,7 +17,7 @@ public class Timer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (timesec < 0f)
+		if (timesec < 1f)
 		{
 			timesec = 0f;
 			SceneManager.LoadScene("GameOver");
