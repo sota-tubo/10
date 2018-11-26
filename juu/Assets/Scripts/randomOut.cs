@@ -28,7 +28,7 @@ public class randomOut : MonoBehaviour {
 			{
 				string randstr = "Gate" + rand.ToString();
 				GameObject randObj = GameObject.Find(randstr);
-			    if (gates.Contains(randObj) == false || round == 1)
+			    if (gates.Contains(randObj) == false)
 				{
 					gates.Add(randObj);
 				    Debug.Log("add.");
@@ -50,7 +50,9 @@ public class randomOut : MonoBehaviour {
 	IEnumerator VisOut()
 	{
 
-		yield return new WaitForSeconds(2.0f);
+		yield return new WaitForSeconds(2.0f * 3.0f);
+
+		Debug.Log("First");
 
 		if (round == 5)
 		{
@@ -59,7 +61,9 @@ public class randomOut : MonoBehaviour {
 			outObj.SetActive(true);
 		}
 
-		yield return new WaitForSeconds(1.0f);
+		yield return new WaitForSeconds(1.0f * 3.0f);
+
+		Debug.Log("Second");
 
 		if (round >= 4)
         {
@@ -68,7 +72,9 @@ public class randomOut : MonoBehaviour {
 			outObj.SetActive(true);
         }
 
-		yield return new WaitForSeconds(1.0f);
+		yield return new WaitForSeconds(1.0f * 3.0f);
+
+		Debug.Log("Third");
 
 		if (round >= 3)
         {
@@ -77,7 +83,9 @@ public class randomOut : MonoBehaviour {
 			outObj.SetActive(true);
         }
         
-		yield return new WaitForSeconds(1.0f);
+		yield return new WaitForSeconds(1.0f * 3.0f);
+
+		Debug.Log("Fourth");
 
 		if (round >= 2)
         {
@@ -86,7 +94,9 @@ public class randomOut : MonoBehaviour {
 			outObj.SetActive(true);
         }
         
-		yield return new WaitForSeconds(1.0f);
+		yield return new WaitForSeconds(1.0f * 3.0f);
+
+		Debug.Log("Last");
 
 		if (round >= 1)
         {

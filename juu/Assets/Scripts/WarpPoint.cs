@@ -28,9 +28,8 @@ public class WarpPoint : MonoBehaviour {
 	{
 		if (other.gameObject.tag == "Player")
 		{
-			Debug.Log(rndOut.gates.Contains(gameObject));
 			//当たりの扉に入った場合
-			if (rndOut.gates.Contains(gameObject) == false)
+			if (rndOut.gates.Contains(transform.root.gameObject) == false)
 			{
 				//スコア計算
 				score.plus(timer.timesec);
@@ -57,7 +56,7 @@ public class WarpPoint : MonoBehaviour {
 				timer.timesec = 11f;
 			}
 			//ハズレの扉に入った場合
-			else
+			else if (rndOut.gates.Contains(transform.root.gameObject) == true)
 			{
 				SceneManager.LoadScene("GameOver");
 			}
