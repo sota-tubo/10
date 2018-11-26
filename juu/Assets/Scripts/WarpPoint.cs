@@ -12,11 +12,13 @@ public class WarpPoint : MonoBehaviour {
 
 	private randomOut rndOut;
 	private GameObject warpTarget;
+	private AudioSource correct;
 
 	// Use this for initialization
 	void Start () {
 		rndOut = GameObject.Find("GameSystem").GetComponent<randomOut>();
 		warpTarget = GameObject.Find("WarpStart");
+		correct = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -31,6 +33,7 @@ public class WarpPoint : MonoBehaviour {
 			//当たりの扉に入った場合
 			if (rndOut.gates.Contains(transform.root.gameObject) == false)
 			{
+				correct.Play();
 				//スコア計算
 				score.plus(timer.timesec);
 				

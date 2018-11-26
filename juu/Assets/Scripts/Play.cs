@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Play : MonoBehaviour {
 
+	private AudioSource dec;
+
 	// Use this for initialization
 	void Start () {
-		
+		dec = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -19,6 +21,7 @@ public class Play : MonoBehaviour {
 	{
 		if (Input.GetKeyDown(KeyCode.Return))
 		{
+			dec.Play();
 			SceneManager.LoadScene("Main");
 		}
 	}
